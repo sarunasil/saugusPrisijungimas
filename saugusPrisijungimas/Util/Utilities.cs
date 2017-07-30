@@ -16,7 +16,6 @@ namespace saugusPrisijungimas.database
             ClientScriptManager cs = pg.ClientScript;
             cs.RegisterClientScriptBlock(cstype, s, s.ToString());
         }
-
-        //public static string 
+        
     }
 }

@@ -10,6 +10,7 @@
 
 <head runat="server">
     <title>Lutex prisijungimas prisijungimas</title>
+    
 
     <style>
         body{
@@ -37,7 +38,8 @@
             <asp:ImageButton ID="LogoBtn" runat="server"  ImageUrl="~/Resources/logo.png"/>
         </header>
         <main>
-            <asp:Login ID="Login1" runat="server" Font-Bold="False" Font-Size="X-Large" LoginButtonText="Prisijungti" PasswordLabelText="Slaptažodis:" RememberMeText="Prisiminti" TitleText="Prisijungimas" UserNameLabelText="Vartotojo vardas:" OnAuthenticate="Login_Authenticate"></asp:Login>
+            <asp:Login ID="Login1" runat="server" Font-Bold="False" Font-Size="X-Large" LoginButtonText="Prisijungti" PasswordLabelText="Slaptažodis:" RememberMeText="Prisiminti" TitleText="Prisijungimas" UserNameLabelText="Vartotojo vardas:" OnAuthenticate="Login_Authenticate" FailureText="Neteisingi prisijungimo duomenys"></asp:Login>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
         </main>
     </form>
 </body>
